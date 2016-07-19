@@ -5,6 +5,17 @@ ${name} microservice
 
 ${description}
 
+To set up your development environment
+--------------
+
+This project requires Java 8 to build and run. If you are using Docker you can obtain a clean development environment to use with this project by issuing the following command:
+
+```shell
+> docker run -it -p8080:8080 --rm --name ${name} -v "$PWD":/usr/src/${name} -w /usr/src/${name} java:8
+```
+
+The commands that follow can then all be entered in the resulting shell.
+
 To run locally
 --------------
 
